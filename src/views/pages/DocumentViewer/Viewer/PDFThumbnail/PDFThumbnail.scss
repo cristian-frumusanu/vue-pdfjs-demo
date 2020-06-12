@@ -1,0 +1,44 @@
+.pdf-thumbnail {
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  img,
+  .placeholder {
+    border: 5px solid transparent;
+    width: 65%;
+  }
+}
+
+
+.pdf-thumbnail.focused img {
+  border-color: $color-gray-3;
+}
+
+.placeholder {
+  background: white;
+  background-clip: content-box;
+  position: relative;
+}
+
+.placeholder:before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+
+.placeholder .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

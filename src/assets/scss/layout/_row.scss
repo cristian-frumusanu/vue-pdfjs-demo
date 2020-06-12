@@ -1,0 +1,11 @@
+.row--alt {
+    $gutter: 3px;
+
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    & > [class*="col"] {
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+}

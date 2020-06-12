@@ -1,0 +1,2 @@
+API: http://localhost:21021/
+WEB: http://localhost:4200/

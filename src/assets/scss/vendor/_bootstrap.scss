@@ -1,0 +1,55 @@
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+$theme-colors: (
+    "black": $color-black,
+    "primary": rgba($color-primary, 0.8),
+    "secondary": rgba(darken($color-primary, 10%), 0.8),
+    "light": $color-gray-5,
+);
+
+$body-bg: $color-body-bg;
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 6),
+    7: ($spacer * 8),
+    8: ($spacer * 12)
+);
+
+$badge-font-size: .75rem;
+$badge-font-weight: 400;
+$badge-border-radius: .75rem;
+$badge-padding-y: .25rem;
+$badge-padding-x: .5rem;
+
+@import "~bootstrap/scss/variables";
+$colors: map-remove($colors, "blue", "indigo", "purple", "pink", "red", "orange", "yellow", "green", "teal", "cyan" );
+
+// Optional
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/badge";
+
+@import "~bootstrap/scss/utilities/background";
+@import "~bootstrap/scss/utilities/clearfix";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/utilities/screenreaders";
+@import "~bootstrap/scss/utilities/sizing";
+@import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/text";

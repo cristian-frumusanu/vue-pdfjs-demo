@@ -1,0 +1,52 @@
+.el-table__row.el-table__row:hover {
+    cursor: pointer;
+}
+
+.el-table {
+    font-size: 0.813rem;
+
+    .el-table__header-wrapper {
+        background-color: $color-gray-4;
+        border-radius: 0.125rem;
+
+        tr {
+            background-color: transparent;
+        }
+
+        th {
+            padding: .25rem 0;
+            border-bottom: 0;
+
+            background-color: transparent;
+
+            .cell {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+
+    td {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .caret-wrapper {
+        width: 1rem;
+        margin-right: .25rem;
+    }
+
+    .sort-caret {
+        left: 3px;
+    }
+
+    .sort-caret.ascending {
+        border-bottom-color: inherit;
+    }
+
+    .sort-caret.descending {
+        border-top-color: inherit;
+    }
+}
