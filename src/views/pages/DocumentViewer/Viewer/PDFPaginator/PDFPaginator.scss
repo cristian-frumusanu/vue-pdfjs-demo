@@ -1,0 +1,11 @@
+.pdf-paginator {
+    display: flex;
+    align-items: center;
+
+    &__counter {
+        margin-left: 1rem;
+        padding: 0.25rem 1rem;
+        background-color: var(--color-gray-4);
+        border-radius: 3rem;
+    }
+}

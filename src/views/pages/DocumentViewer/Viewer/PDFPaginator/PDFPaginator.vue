@@ -1,16 +1,22 @@
 <template>
     <div class="pdf-paginator  text-muted  fs-14">
-        <span class="px-1  font-weight-bold  text-black">{{ value }}</span
-        >/<span class="px-1">{{ pageCount }}</span>
+        <div>
+            <ElButton @click="prevPage" type="text">
+                <font-awesome-icon icon="arrow-alt-circle-up" size="lg" />
+            </ElButton>
+            <ElButton @click="nextPage" type="text">
+                <font-awesome-icon icon="arrow-alt-circle-down" size="lg" />
+            </ElButton>
+        </div>
+
+        <div class="pdf-paginator__counter">
+            <span class="px-1  font-weight-bold  text-black">{{ value }}</span>
+            /
+            <span class="px-1">{{ pageCount }}</span>
+        </div>
     </div>
 </template>
 
 <script lang="ts" src="./PDFPaginator.ts"></script>
 
-<style>
-.pdf-paginator {
-    padding: 0.25rem 1rem;
-    background-color: var(--color-gray-4);
-    border-radius: 3rem;
-}
-</style>
+<style src="./PDFPaginator.scss" lang="scss"></style>

@@ -30,12 +30,4 @@ export default class PDFZoom extends Vue {
   fitAuto() {
     this.$emit('fit', 'auto');
   }
-
-  prevPage() {
-    this.$emit('prev-page');
-  }
-
-  nextPage() {
-    this.$emit('next-page');
-  }
 }

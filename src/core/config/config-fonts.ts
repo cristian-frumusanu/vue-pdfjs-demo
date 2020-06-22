@@ -15,6 +15,10 @@ import {
   faStar,
   faChevronRight,
   faCaretDown,
+  faExpandAlt,
+  faCompressAlt,
+  faPlusCircle,
+  faMinusCircle,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -34,7 +38,11 @@ library.add(
   faArrowAltCircleDown,
   faStar,
   faChevronRight,
-  faCaretDown
+  faCaretDown,
+  faExpandAlt,
+  faCompressAlt,
+  faPlusCircle,
+  faMinusCircle
 );
 
 const initFonts = vue => {

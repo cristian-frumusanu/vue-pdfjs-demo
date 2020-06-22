@@ -13,4 +13,12 @@ export default class PDFPaginator extends Vue {
   input(event) {
     this.$emit('input', parseInt(event.target.value, 10));
   }
+
+  prevPage() {
+    this.$emit('prev-page');
+  }
+
+  nextPage() {
+    this.$emit('next-page');
+  }
 }

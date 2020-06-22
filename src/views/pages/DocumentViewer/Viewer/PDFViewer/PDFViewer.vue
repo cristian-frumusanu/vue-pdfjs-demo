@@ -1,20 +1,17 @@
 <template>
     <div class="pdf-viewer" :class="{ 'is--preview-shown': isPreviewEnabled }">
         <header class="pdf-viewer__header text-center">
-            <h1 class="h6 mb-0">Bilancio 2019</h1>
+            <h1 class="h6 mb-0">Vue.js PDF viewer</h1>
 
             <div class="pdf-viewer__controls">
+                <PDFPaginator v-model="currentPage" :pageCount="pageCount" />
                 <PDFZoom
+                    class="ml-auto"
                     :scale="scale"
                     @change="updateScale"
                     @fit="updateFit"
                     @prev-page="prevPage"
                     @next-page="nextPage"
-                />
-                <PDFPaginator
-                    class="ml-3"
-                    v-model="currentPage"
-                    :pageCount="pageCount"
                 />
             </div>
         </header>
