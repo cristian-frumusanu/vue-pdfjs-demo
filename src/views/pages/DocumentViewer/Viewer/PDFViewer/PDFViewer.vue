@@ -4,14 +4,17 @@
             <h1 class="h6 mb-0">Vue.js PDF viewer</h1>
 
             <div class="pdf-viewer__controls">
-                <PDFPaginator v-model="currentPage" :pageCount="pageCount" />
+                <PDFPaginator
+                    v-model="currentPage"
+                    :pageCount="pageCount"
+                    @prev-page="prevPage"
+                    @next-page="nextPage"
+                />
                 <PDFZoom
                     class="ml-auto"
                     :scale="scale"
                     @change="updateScale"
                     @fit="updateFit"
-                    @prev-page="prevPage"
-                    @next-page="nextPage"
                 />
             </div>
         </header>
